@@ -19,20 +19,17 @@ body {
 .content {
   height: 92vh;
   overflow: scroll;
-  padding: 1rem;
 }
 
 .post-preview {
   display: flex;
   flex-direction: column;
   width: 100%;
-
 }
 
 .post-preview-header {
   display: flex;
   gap: 1rem;
-  padding-left: 1rem;
 }
 
 .post-preview-title {
@@ -40,17 +37,13 @@ body {
   text-align: center;
 }
 
-.post-preview-text {
-  padding: 1rem;
-}
-
 .post-preview-footer {
   display: flex;
   flex-direction: row-reverse;
   gap: 1rem;
-  padding-right: 1rem;
 }
 
 .content, .navigation-bar, .post-preview, .post-preview-header, .post-preview-image, .post-preview-title, .post-preview-text, .post-preview-footer {
   border: 1px solid black;
+  padding: 1rem;
 }
