@@ -1,8 +1,23 @@
 import './App.css'
+import { Route, Routes } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import NewPostPage from './pages/NewPostPage'
+import PostPage from './pages/PostPage'
+import NotFound from './pages/NotFound'
+import NavigationBar from './features/NavigationBar'
 
 function App() {
   return (
-    <div>
+    <div className="app">
+      <div className="content">
+        <Routes>
+          <Route path="/" element={<HomePage />}></Route>
+          <Route path="/new" element={<NewPostPage />}></Route>
+          <Route path="/posts/:id" element={<PostPage />}></Route>
+          <Route path="*" element={<NotFound />}></Route>
+        </Routes>
+      </div>
+      <NavigationBar />
     </div>
   )
 }
