@@ -1,9 +1,5 @@
-import React from 'react'
-
-function NewPostPage() {
+export default function NewPostPage() {
   return (
-    <div>NewPostPage</div>
+    <div>NewPostPage. If not logged in, this page should reroute to a login page.</div>
   )
 }
-
-export default NewPostPage

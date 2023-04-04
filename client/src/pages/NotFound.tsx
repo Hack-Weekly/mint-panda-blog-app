@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-function NotFound() {
+export default function NotFound() {
     const navigate = useNavigate()
 
     useEffect(() => {
@@ -14,5 +14,3 @@ function NotFound() {
         <div>This page doesn't exist!</div>
     )
 }
-
-export default NotFound

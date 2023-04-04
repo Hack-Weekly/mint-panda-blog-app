@@ -27,7 +27,8 @@ export default function PostPreview(props:PostPreviewProps) {
         
         <div className="post-preview-title">{title}</div>
         
-        <div className="post-preview-text">{text.substring(0, PREVIEW_TEXT_LENGTH)}...</div>
+        {/* truncate the text if it is longer than PREVIEW_TEXT_LENGTH */}
+        <div className="post-preview-text">{text.substring(0, PREVIEW_TEXT_LENGTH)}{text.length > PREVIEW_TEXT_LENGTH && "..."}</div>
         
         <div className="post-preview-footer">
             <span>Likes: {likes}</span>

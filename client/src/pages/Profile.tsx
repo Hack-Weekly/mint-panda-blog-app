@@ -1,9 +1,5 @@
-import React from 'react'
-
-function Profile() {
+export default function Profile() {
   return (
-    <div>Profile</div>
+    <div>Profile. If not logged in, this page should reroute to a login page.</div>
   )
 }
-
-export default Profile
