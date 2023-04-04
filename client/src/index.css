@@ -9,6 +9,10 @@ body {
   color: black;
 }
 
+input, textarea {
+  padding: .25rem;
+}
+
 .navigation-bar {
   display: flex;
   align-items: center;
@@ -25,6 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .post-preview-header {
@@ -43,7 +48,72 @@ body {
   gap: 1rem;
 }
 
-.content, .navigation-bar, .post-preview, .post-preview-header, .post-preview-image, .post-preview-title, .post-preview-text, .post-preview-footer {
+.post-creator textarea, .post-creator input {
+  width: 100%;
+}
+
+.post-creator {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.add-image {
+  display: flex;
+  gap: 1rem;
+}
+
+.post-creator-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: .5rem;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-avatar {
+  height: 8rem;
+  width: 8rem;
+  border: 1px solid black;
+  border-radius: 4rem;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.post-preview-avatar {
+  border: 1px solid black;
+  width: 1rem;
+  height: 1rem;
+  border-radius: .5rem;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.content, .search, .login, .navigation-bar, .post-preview, .post-preview-header, .post-preview-image, 
+.post-preview-title, .post-preview-text, .post-preview-footer, .post-creator, .post-creator-footer,
+.add-image {
   border: 1px solid black;
   padding: 1rem;
 }
