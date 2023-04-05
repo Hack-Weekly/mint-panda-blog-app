@@ -44,7 +44,7 @@ input, textarea {
 
 .post-preview-footer {
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: flex-end;
   gap: 1rem;
 }
 
@@ -116,4 +116,10 @@ input, textarea {
 .add-image {
   border: 1px solid black;
   padding: 1rem;
+}
+
+.counter {
+  display: flex;
+  gap: .25rem;
+  align-items: center;
 }

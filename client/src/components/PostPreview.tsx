@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom'
+import { FaHeart, FaCommentAlt } from 'react-icons/fa'
+
 type PostPreviewProps = {
     post: {
         key: string,
@@ -13,8 +16,12 @@ type PostPreviewProps = {
 }
 
 export default function PostPreview(props:PostPreviewProps) {
-    const { authorName, authorAvatar, title, text, image, date, likes, comments } = props.post;
+    const { key, authorName, authorAvatar, title, text, image, date, likes, comments } = props.post;
     const PREVIEW_TEXT_LENGTH = 400;
+
+    function handleLike() {
+        //like if unliked, unlike if liked, update DB object property
+    }
 
     return (
     <div className="post-preview">
@@ -27,15 +34,17 @@ export default function PostPreview(props:PostPreviewProps) {
         
         { image !=="" && <img className="post-preview-image" src={image}/> /* for some reason this is rendering an img element even if image==="" */}
         
-        <div className="post-preview-title">{title}</div>
+        <Link className="post-preview-title" to={`/posts/${key}`}>{title}</Link>
         
-        {/* truncate the text if it is longer than PREVIEW_TEXT_LENGTH */}
-        <div className="post-preview-text">{text.substring(0, PREVIEW_TEXT_LENGTH)}{text.length > PREVIEW_TEXT_LENGTH && "..."}</div>
+        {/* truncates the text if it is longer than PREVIEW_TEXT_LENGTH */}
+        <p className="post-preview-text">{text.substring(0, PREVIEW_TEXT_LENGTH)}{text.length > PREVIEW_TEXT_LENGTH && "..."}</p>
         
 
         <div className="post-preview-footer">
-            <span>Likes: {likes}</span>
-            <span>Comments: {comments}</span>
+            <div className="counter" onClick={handleLike}><FaHeart /><span>{likes}</span></div>
+            <Link to={`/posts/${key}#comments`}>
+                <div className="counter"><FaCommentAlt /><span>{comments}</span></div>
+            </Link>
         </div>
         
     </div>
