@@ -5,7 +5,8 @@ export default function SearchBar() {
   const [query, setQuery] = useState('');
 
   function search() {
-    console.log('Searching for blog posts with tag: ' + query )
+    if (query === '') return;
+    //search for posts with passed tag
   }
 
   return (
