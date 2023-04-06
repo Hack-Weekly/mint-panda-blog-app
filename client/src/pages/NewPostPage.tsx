@@ -1,4 +1,4 @@
-import PostCreator from '../features/PostCreator'
+import { PostCreator } from '../features'
 
 export default function NewPostPage() {
   return (

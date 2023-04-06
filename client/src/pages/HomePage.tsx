@@ -1,5 +1,4 @@
-import PostPreview from '../components/PostPreview'
-import SearchBar from '../components/SearchBar'
+import { PostPreview, SearchBar } from '../components'
 
 const dummyData = [
   {
