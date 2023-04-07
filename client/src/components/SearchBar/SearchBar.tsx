@@ -1,4 +1,6 @@
 import { ChangeEvent, SetStateAction, useState } from 'react'
+import './SearchBar.css'
+import { RxMagnifyingGlass } from 'react-icons/rx'
 
 export default function SearchBar() {
 
@@ -10,9 +12,11 @@ export default function SearchBar() {
   }
 
   return (
-    <div className="search">
+    <div className="search shadow">
         <input onChange={e => setQuery(e.target.value)} type="text" />
-        <button onClick={search}>Search</button>
+        <button className="shadow-small" onClick={search}>
+          <RxMagnifyingGlass/>
+        </button>
     </div>
   )
 }

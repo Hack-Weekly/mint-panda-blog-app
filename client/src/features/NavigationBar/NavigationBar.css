@@ -1,0 +1,26 @@
+.navigation-bar {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .5rem;  
+    background-color: #7fbc8c;
+}
+button {
+    font-size: 1.25rem;
+    border: 2px solid black;
+    padding: .5rem;
+    background-color: #ffa07a
+}
+button:active {
+    box-shadow: none;
+}
+.yellow {
+    background-color: #ffdb58;
+}

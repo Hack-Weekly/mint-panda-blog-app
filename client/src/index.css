@@ -5,47 +5,28 @@
 }
 
 body {
-  background-color: rgb(190, 190, 190);
-  color: black;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #c4a1ff;
+  font-weight: 500;
 }
 
 input, textarea {
   padding: .25rem;
 }
 
-.navigation-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 8vh;
+a {
+  color: black;
+}
+
+.shadow {
+  box-shadow: #000 4px 4px 0px 0px;
+}
+.shadow-small {
+  box-shadow: #000 2px 2px 0px 0px;
 }
 
 .content {
-  height: 92vh;
   overflow: scroll;
-}
-
-.post-preview {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-.post-preview-header {
-  display: flex;
-  gap: 1rem;
-}
-
-.post-preview-title {
-  font-weight: bold;
-  text-align: center;
-}
-
-.post-preview-footer {
-  display: flex;
-  justify-content: flex-end;
-  gap: 1rem;
 }
 
 .post-creator textarea, .post-creator input {
@@ -88,20 +69,6 @@ input, textarea {
   border-radius: 4rem;
 }
 
-.search {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
-  gap: 1rem;
-}
-
-.post-preview-avatar {
-  border: 1px solid black;
-  width: 1rem;
-  height: 1rem;
-  border-radius: .5rem;
-}
-
 .login {
   display: flex;
   flex-direction: column;
@@ -111,8 +78,7 @@ input, textarea {
   align-items: center;
 }
 
-.content, .search, .login, .navigation-bar, .post-preview, .post-preview-header, .post-preview-image, 
-.post-preview-title, .post-preview-text, .post-preview-footer, .post-creator, .post-creator-footer,
+.content, .login, .post-creator, .post-creator-footer,
 .add-image {
   border: 1px solid black;
   padding: 1rem;

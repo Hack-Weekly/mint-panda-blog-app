@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import { FaHeart, FaCommentAlt } from 'react-icons/fa'
+import { FaRegHeart, FaRegCommentAlt } from 'react-icons/fa'
+import './PostPreview.css'
 
 type PostPreviewProps = {
     post: {
@@ -24,11 +25,13 @@ export default function PostPreview(props:PostPreviewProps) {
     }
 
     return (
-    <div className="post-preview">
-        
+    <div className="post-preview shadow">
+
         <div className="post-preview-header">
-            <img className="post-preview-avatar" src={authorAvatar}/>
-            <span>{authorName}</span>
+            <div className="post-preview-user shadow-small">
+                <img className="post-preview-avatar" src={authorAvatar}/>
+                <span>{authorName}</span>
+            </div>
             <div><em>{date}</em></div>
         </div>
         
@@ -37,13 +40,13 @@ export default function PostPreview(props:PostPreviewProps) {
         <Link className="post-preview-title" to={`/posts/${key}`}>{title}</Link>
         
         {/* truncates the text if it is longer than PREVIEW_TEXT_LENGTH */}
-        <p className="post-preview-text">{text.substring(0, PREVIEW_TEXT_LENGTH)}{text.length > PREVIEW_TEXT_LENGTH && "..."}</p>
+        <p className="post-preview-text shadow-small">{text.substring(0, PREVIEW_TEXT_LENGTH)}{text.length > PREVIEW_TEXT_LENGTH && "..."}</p>
         
 
         <div className="post-preview-footer">
-            <div className="counter" onClick={handleLike}><FaHeart /><span>{likes}</span></div>
+            <div className="counter" onClick={handleLike}><FaRegHeart /><span>{likes}</span></div>
             <Link to={`/posts/${key}#comments`}>
-                <div className="counter"><FaCommentAlt /><span>{comments}</span></div>
+                <div className="counter"><FaRegCommentAlt /><span>{comments}</span></div>
             </Link>
         </div>
         

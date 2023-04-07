@@ -1,4 +1,4 @@
-import NavigationBar from './NavigationBar'
+import NavigationBar from './NavigationBar/NavigationBar'
 import Post from './Post'
 import PostCreator from './PostCreator'
 
