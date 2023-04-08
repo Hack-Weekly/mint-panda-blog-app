@@ -20,7 +20,6 @@ export default function SearchBar() {
         scrollPos = newScrollPos;
         waiting = true;
         setTimeout(() => {waiting = false}, 100);
-        console.log(lastScroll)
       }
     }
     window.addEventListener('scroll', handleScroll);
