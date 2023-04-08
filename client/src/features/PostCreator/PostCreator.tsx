@@ -9,7 +9,7 @@ export default function PostCreator() {
   
   const navigate = useNavigate();
 
-  function submitPost() {
+  const submitPost = () => {
     //validate input here, return if invalid
 
     let tagsArray = tags.split(',');
