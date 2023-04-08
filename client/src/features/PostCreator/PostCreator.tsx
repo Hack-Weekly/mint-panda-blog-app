@@ -12,7 +12,6 @@ export default function PostCreator() {
         <textarea rows={6} name="body" id="body" placeholder="Body"/>
         <input type="text" name="tags" id="tags" placeholder="Tags, seperated by comma" />
         <div className="post-creator-footer">
-            <button className="shadow-small">Preview</button>
             <button className="shadow-small">Post</button>
         </div>
     </div>

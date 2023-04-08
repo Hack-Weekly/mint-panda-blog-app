@@ -18,9 +18,10 @@
     border: 2px solid black;
     padding: .25rem;
     background-color: #ffa07a;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 2rem;
+    width: 6rem;
     display: flex;
     align-items: center;
     justify-content: center;

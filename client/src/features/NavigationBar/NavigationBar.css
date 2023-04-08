@@ -9,18 +9,20 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: .5rem;  
+    padding: .25rem;  
     background-color: #7fbc8c;
 }
 .navigation-bar button {
-    font-size: 1.25rem;
+    font-size: 2rem;
     border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: .5rem;
     background-color: #ffa07a;
+    border-radius: 50%;
 }
-.navigation-bar button:active {
-    box-shadow: none;
-}
+
 .yellow {
     background-color: #ffdb58;
 }

@@ -23,7 +23,8 @@ export default function PostPreview(props:PostPreviewProps) {
     const [isLiked, setIsLiked] = useState(false);
 
     function handleLike() {
-        //like if unliked, unlike if liked, update DB object property
+        //update DB object property
+        setIsLiked(!isLiked);
     }
 
     return (
@@ -46,7 +47,7 @@ export default function PostPreview(props:PostPreviewProps) {
         
 
         <div className="post-preview-footer">
-            <div className="counter" onClick={() => setIsLiked(!isLiked)}>
+            <div className="counter" onClick={handleLike}>
                 {isLiked ? <FaHeart style={{color: "#ff6b6b"}}/> : <FaRegHeart />}
                 <span>
                     {isLiked ? likes + 1 : likes}

@@ -1,5 +1,6 @@
-export default function Profile() {
+import './Profile.css'
 
+export default function Profile() {
   const dummyData = {
     username: "John Smith",
     avatar: "",
