@@ -9,7 +9,7 @@ export default function SearchBar() {
   const [lastScroll, setLastScroll] = useState('up');
 
 
-
+  //hides scrollbar when scrolling down, shows when scrolling up
   useEffect(() => {
     let waiting = false;
     let scrollPos = 0;

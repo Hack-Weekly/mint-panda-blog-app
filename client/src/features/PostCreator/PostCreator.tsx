@@ -7,7 +7,7 @@ export default function PostCreator() {
   const [body, setBody] = useState('');
   const [tags, setTags] = useState('');
   
-  const go = useNavigate();
+  const navigate = useNavigate();
 
   function submitPost() {
     //validate input here, return if invalid
@@ -27,7 +27,7 @@ export default function PostCreator() {
     setBody('');
     setTags('');
 
-    go('/')
+    navigate('/')
   }
 
   return (
