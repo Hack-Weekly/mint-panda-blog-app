@@ -1,13 +1,16 @@
 import './PostCreator.css'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export default function PostCreator() {
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
   const [tags, setTags] = useState('');
+  
+  const go = useNavigate();
 
   function submitPost() {
-    //input validation goes here
+    //validate input here, return if invalid
 
     let tagsArray = tags.split(',');
 
@@ -18,11 +21,13 @@ export default function PostCreator() {
       tags: tagsArray,
     }
 
-    // send to backend
+    // send object to backend here
 
     setTitle('');
     setBody('');
     setTags('');
+
+    go('/')
   }
 
   return (
