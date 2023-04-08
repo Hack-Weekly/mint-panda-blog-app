@@ -29,43 +29,23 @@ a {
   overflow: scroll;
 }
 
-.post-creator textarea, .post-creator input {
-  width: 100%;
-}
-
-.post-creator {
-  display: flex;
-  flex-direction: column;
-  gap: .5rem;
-  height: 100%;
-  justify-content: center;
-  text-align: center;
-}
-
-.add-image {
-  display: flex;
-  gap: 1rem;
-}
-
-.post-creator-footer {
-  display: flex;
-  justify-content: flex-end;
-  gap: .5rem;
-}
-
 .profile {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 92vh;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
 
+.profile-username {
+  font-size: 1.5rem;
+}
+
 .profile-avatar {
   height: 8rem;
   width: 8rem;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 4rem;
 }
 
@@ -78,8 +58,7 @@ a {
   align-items: center;
 }
 
-.content, .login, .post-creator, .post-creator-footer,
-.add-image {
+.login {
   border: 1px solid black;
   padding: 1rem;
 }
@@ -88,4 +67,12 @@ a {
   display: flex;
   gap: .25rem;
   align-items: center;
+}
+
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 92vh;
 }

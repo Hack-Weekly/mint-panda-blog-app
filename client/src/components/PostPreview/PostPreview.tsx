@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
-import { FaRegHeart, FaRegCommentAlt } from 'react-icons/fa'
+import { FaRegHeart, FaHeart, FaRegCommentAlt } from 'react-icons/fa'
 import './PostPreview.css'
+import { useState } from 'react';
 
 type PostPreviewProps = {
     post: {
@@ -19,6 +20,7 @@ type PostPreviewProps = {
 export default function PostPreview(props:PostPreviewProps) {
     const { key, authorName, authorAvatar, title, text, image, date, likes, comments } = props.post;
     const PREVIEW_TEXT_LENGTH = 400;
+    const [isLiked, setIsLiked] = useState(false);
 
     function handleLike() {
         //like if unliked, unlike if liked, update DB object property
@@ -44,7 +46,12 @@ export default function PostPreview(props:PostPreviewProps) {
         
 
         <div className="post-preview-footer">
-            <div className="counter" onClick={handleLike}><FaRegHeart /><span>{likes}</span></div>
+            <div className="counter" onClick={() => setIsLiked(!isLiked)}>
+                {isLiked ? <FaHeart style={{color: "#ff6b6b"}}/> : <FaRegHeart />}
+                <span>
+                    {isLiked ? likes + 1 : likes}
+                </span>
+            </div>
             <Link to={`/posts/${key}#comments`}>
                 <div className="counter"><FaRegCommentAlt /><span>{comments}</span></div>
             </Link>

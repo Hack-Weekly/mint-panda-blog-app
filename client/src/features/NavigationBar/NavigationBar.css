@@ -12,13 +12,13 @@
     padding: .5rem;  
     background-color: #7fbc8c;
 }
-button {
+.navigation-bar button {
     font-size: 1.25rem;
     border: 2px solid black;
     padding: .5rem;
-    background-color: #ffa07a
+    background-color: #ffa07a;
 }
-button:active {
+.navigation-bar button:active {
     box-shadow: none;
 }
 .yellow {
