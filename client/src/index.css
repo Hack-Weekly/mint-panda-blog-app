@@ -67,6 +67,8 @@ a {
   display: flex;
   gap: .25rem;
   align-items: center;
+  user-select: none;
+  cursor: pointer;
 }
 
 .centered-container {
