@@ -71,6 +71,11 @@ a {
   cursor: pointer;
 }
 
+/* styling for active nav button */
+.active button {
+  background-color: #87ceeb;
+}
+
 .centered-container {
   display: flex;
   flex-direction: column;
