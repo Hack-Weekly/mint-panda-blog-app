@@ -36,7 +36,7 @@ export default function SearchBar() {
     <AnimatePresence>
       {lastScroll == "up" &&
         <motion.div className="search shadow" key="nav-menu" initial={{top: "-8rem"}} animate={{ top: "0"}} exit={{top: "-8rem"}}>
-            <input onChange={e => setQuery(e.target.value)} type="text" />
+            <input onChange={e => setQuery(e.target.value)} value={query} type="text" />
             <button className="shadow-small" onClick={search}>
               <RxMagnifyingGlass/>
             </button>
