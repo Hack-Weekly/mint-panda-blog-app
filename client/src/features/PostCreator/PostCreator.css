@@ -1,0 +1,57 @@
+.post-creator textarea, .post-creator input {
+    width: 100%;
+  }
+  
+  .post-creator {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+    text-align: center;
+    background: #87ceeb;
+    padding: 1rem;
+    border: 2px solid black;
+    margin: 1rem;
+  }
+
+  .post-creator button {
+    border: 2px solid black;
+    padding: .25rem;
+    background-color: #ffa07a;
+    font-size: 1.1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 2rem;
+    width: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .post-creator > input, .post-creator > textarea {
+    border: 2px solid black;
+    padding: .5rem;
+    font-size: 1.25rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .post-creator > textarea {
+    resize: none;
+  }
+
+  .add-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 1.25rem;
+    background: #ffb2ef;
+    padding: .5rem;
+    border: 2px solid black;
+  }
+  
+  .post-creator-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: .5rem;
+    margin: .5rem 0 0;
+  }

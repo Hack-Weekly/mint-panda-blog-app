@@ -1,12 +1,7 @@
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
-import HomePage from './pages/HomePage'
-import NewPostPage from './pages/NewPostPage'
-import PostPage from './pages/PostPage'
-import NotFound from './pages/NotFound'
-import Profile from './pages/Profile'
-import Login from './pages/Login'
-import NavigationBar from './features/NavigationBar'
+import { NavigationBar } from './features'
+import { HomePage, Login, NewPostPage, NotFound, PostPage, Profile } from './pages'
 
 export default function App() {
   return (

@@ -1,13 +1,11 @@
-import PostPreview from '../components/PostPreview'
-import SearchBar from '../components/SearchBar'
-
+import { PostPreview, SearchBar } from '../components'
 const dummyData = [
   {
     key: "a1",
     authorName: "John Smith",
     authorAvatar: "",
     title: "My First Post",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse erat justo, mattis commodo lacus vitae, consectetur ultricies lacus. Suspendisse ullamcorper pharetra aliquet. Pellentesque porttitor condimentum sagittis. Quisque non ex non erat congue tempus eu id eros. Mauris laoreet justo turpis, quis tincidunt arcu aliquet in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus vulputate tortor quis justo faucibus, sodales luctus odio porta.",
+    text: "Aenean pharetra, magna placerat ultrices pulvinar, lorem nunc pharetra sapien, eget dapibus neque nibh quis ligula. Curabitur ut lectus at magna cursus fringilla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin sodales porttitor eros ac tempus. Mauris cursus suscipit arcu, vitae aliquam lacus commodo.",
     image: "",
     date: "Apr 2 2023",
     likes: 12,
@@ -56,7 +54,9 @@ export default function HomePage() {
   return (
     <>
         <SearchBar />
+        <div style={{height: '4rem'}}></div>
         {content}
+        <div style={{height: '3rem'}}></div>
     </>
   )
 }

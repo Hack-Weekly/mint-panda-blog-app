@@ -1,0 +1,22 @@
+.profile > button {
+    padding: .5rem;
+    font-size: 1.1rem;
+    background-color: #ffa07a;
+}
+
+.profile input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 1.5rem;
+    text-align: center;
+    min-width: 0;
+    max-width: 100%;
+}
+
+.edit-button {
+    background: none;
+    border: none;
+    box-shadow: none;
+    font-size: 1.25rem;
+}
